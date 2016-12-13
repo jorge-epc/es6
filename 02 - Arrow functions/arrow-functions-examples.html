@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Arrow functions examples</title>
+</head>
+<body>
+<script>
+  const race = '100m planos';
+  const winners = ['Jorge', 'Juan', 'Pedro'];
+
+  const win = winners.map((winner, i) => ({name: winner, race, place: i + 1}));
+
+  const ages = [23,45,56,76,25,17,75,25];
+  const olds = ages.filter((age) => age >= 60);
+</script>
+</body>
+</html>
