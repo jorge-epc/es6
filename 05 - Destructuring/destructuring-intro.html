@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Destructuring intro</title>
+</head>
+<body>
+<script type="text/javascript">
+  const person = {
+    first: 'Jorge',
+    last: 'Padilla',
+    country: 'EC',
+    city: 'Cuenca',
+    twitter: '@jorge_epc'
+  };
+
+  const {first, last, twitter} = person;
+
+  const jorge = {
+    first: 'Jorge',
+    last: 'Padilla',
+    links: {
+      social: {
+        twitter: 'https://twitter.com/jorge_epc',
+        facebook: 'https://facebook.com/jorgestban_pc',
+      },
+      web: {
+        blog: 'https://jorgepadilla.me'
+      }
+    }
+  };
+
+  const {twitter: tweet, facebook: fb} = jorge.links.social;
+
+  const settings = {width: 300, color: 'black'}; // height, fontSize
+  const {width = 100, height = 100, fontSize = 25, color = 'blue'} = settings;
+
+</script>
+</body>
+</html>
