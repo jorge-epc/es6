@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Destructuring arrays</title>
+</head>
+<body>
+<script>
+    const detail = ['Jorge', 123, 'jorgepadilla.me'];
+    const [name, id, website] = detail;
+    console.log(name, id, website);
+
+    const data = 'Basketball,Sports,90210,23,jor,pad,cool';
+    const [itemName, category, sku, inventory] = data.split(',');
+    console.log(itemName, category, sku, inventory);
+
+    const team = ['Wes', 'Harry', 'Sarah', 'Keegan', 'Riker'];
+    const [captain, assistance, ...players] = team;
+</script>
+</body>
+</html>
